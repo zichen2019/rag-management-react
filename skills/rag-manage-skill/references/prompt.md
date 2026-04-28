@@ -50,18 +50,19 @@
 **布局图示**:
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│  Sidebar (#001529)          Header (#ffffff)                 │
-│  [Logo RAG 平台]            [Burger] [Breadcrumb] [Search]   │
-│                           [Bell] [Avatar]                    │
-──────────────────────────────────────────────────────────────┤
-│                           Main Content (#f0f2f5)             │
-│                                                              │
-│  [Stats Cards]            │  [Right Panel]                   │
-│  [Table & Filters]        │  [Health Chart]                  │
-│  [Trend Charts]           │  [Data Source Chart]             │
-│                           │  [Recent Uploads]                │
-│                           │                                  │
-└──────────────────────────────────────────────────────────────┘
+│  Header (#ffffff)                                            │
+│  [Logo RAG 平台]  [≡] [首页 / 知识库管理] [搜索框] [🔔] [AD] │
+────────────────┬─────────────────────────────────────────────┤
+│  Sidebar       │  Main Content (#f0f2f5)                     │
+│  (#001529)     │                                             │
+│  [知识库管理]  │  [Stats Cards]      │  [Right Panel]       │
+│  [数据源管理]  │  [Table & Filters]  │  [Health Chart]      │
+│  [文档管理]    │  [Trend Charts]     │  [Data Source Chart] │
+│  [向量管理]    │                     │  [Recent Uploads]    │
+│  [检索测试]    │                     │                      │
+│  ...           │                     │                      │
+│  [« 收起菜单]  │                     │                      │
+└────────────────┴─────────────────────────────────────────────┘
 ```
 
 **间距与尺寸**:
@@ -654,8 +655,8 @@ const knowledgeBases: KnowledgeBase[] = [
 const statCards: StatCard[] = [
   { title: '知识库总数', value: 12, trend: 20, icon: 'DatabaseOutlined', color: '#1890ff' },
   { title: '文档总数', value: 18542, trend: 15.3, icon: 'FileOutlined', color: '#52c41a' },
-  { title: '向量总数', value: '235.6 万', trend: 18.7, icon: 'ApiOutlined', color: '#fa8c16' },
-  { title: '存储空间', value: '256.7 GB', trend: 12.1, icon: 'ClockCircleOutlined', color: '#1890ff' }
+  { title: '向量总数', value: '235.6 万', trend: 18.7, icon: 'BlockOutlined', color: '#fa8c16' },
+  { title: '存储空间', value: '256.7 GB', trend: 12.1, icon: 'PieChartOutlined', color: '#1890ff' }
 ];
 ```
 
@@ -736,7 +737,7 @@ const menuItems: MenuItem[] = [
   { key: 'knowledge', label: '知识库管理', icon: 'DatabaseOutlined' },
   { key: 'datasource', label: '数据源管理', icon: 'FolderOutlined' },
   { key: 'document', label: '文档管理', icon: 'FileOutlined' },
-  { key: 'vector', label: '向量管理', icon: 'ApiOutlined' },
+  { key: 'vector', label: '向量管理', icon: 'BlockOutlined' },
   { key: 'search', label: '检索测试', icon: 'SearchOutlined' },
   { key: 'qa', label: '问答测试', icon: 'MessageOutlined' },
   { key: 'app', label: '应用管理', icon: 'AppstoreOutlined' },
