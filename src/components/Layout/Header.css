@@ -1,0 +1,155 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  z-index: 10;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #1a2332;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.logo-icon {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.menu-toggle {
+  font-size: 16px;
+  color: #8c8c8c;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menu-toggle:hover {
+  color: #1890ff;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.breadcrumb-icon {
+  color: #1890ff;
+  font-size: 14px;
+}
+
+.breadcrumb-link {
+  color: #1890ff;
+  cursor: pointer;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: #8c8c8c;
+}
+
+.breadcrumb-current {
+  color: #8c8c8c;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.knowledge-base-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.knowledge-base-selector:hover {
+  border-color: #1890ff;
+}
+
+.selector-label {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.selector-value {
+  color: #262626;
+  font-size: 14px;
+}
+
+.selector-arrow {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.notification-icon {
+  font-size: 18px;
+  color: #8c8c8c;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.notification-icon:hover {
+  color: #1890ff;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  background: #1890ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-name {
+  color: #262626;
+  font-size: 14px;
+}
+
+.user-arrow {
+  color: #8c8c8c;
+  font-size: 12px;
+}

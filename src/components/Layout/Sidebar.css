@@ -1,0 +1,69 @@
+.sidebar {
+  background: #1a2332 !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.sidebar-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #1a2332;
+}
+
+.sidebar-menu {
+  flex: 1;
+  background: #1a2332 !important;
+  border-right: none !important;
+}
+
+.sidebar-menu .ant-menu-item {
+  color: #8c8c8c !important;
+  height: 48px;
+  line-height: 48px;
+  margin: 4px 8px;
+  border-radius: 4px;
+}
+
+.sidebar-menu .ant-menu-item .ant-menu-item-icon {
+  color: #8c8c8c !important;
+}
+
+.sidebar-menu .ant-menu-item:hover {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.sidebar-menu .ant-menu-item:hover .ant-menu-item-icon {
+  color: #ffffff !important;
+}
+
+.sidebar-menu .ant-menu-item-selected {
+  color: #ffffff !important;
+  background: #1890ff !important;
+}
+
+.sidebar-menu .ant-menu-item-selected .ant-menu-item-icon {
+  color: #ffffff !important;
+}
+
+.collapse-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.collapse-button:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.collapse-button .anticon {
+  font-size: 12px;
+}
