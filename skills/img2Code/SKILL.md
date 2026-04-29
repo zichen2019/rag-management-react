@@ -13,12 +13,40 @@ description: 将设计稿图片转换为完整的 React 前端项目
 - 存放位置：`skills/img2Code/assets/image.png`
 
 ## 输出产物
-- 设计稿分析文档：`result/references/analysis.md`
-- 开发提示词文档：`result/references/prompt.md`
+- 设计稿分析文档：`skills/img2Code/temp/analysis.md`
+- 开发提示词文档：`skills/img2Code/temp/prompt.md`
 - 完整的前端项目代码：项目根目录下
 
 ## 流程概览
 
+```
+┌─────────────────┐
+│  1. 读取设计稿  │
+───────┬────────┘
+         │
+┌────────▼────────┐
+│ 2. 生成分析文档 │
+───────┬────────┘
+         │
+───────▼────────┐
+│ 3. 生成提示词   │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│ 4. 评价与优化   │◄──┐
+───────┬────────┘   │
+         │            │ 连续3次"高"
+───────▼────────┐   │
+│ 5. 项目生成     │───┘
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│ 6. 依赖安装验证 │
+└────────┬────────┘
+         │
+┌────────▼────────┐
+│ 7. 清理临时文件 │
+└─────────────────┘
 ```
 ┌─────────────────┐
 │  1. 读取设计稿  │
@@ -57,13 +85,13 @@ description: 将设计稿图片转换为完整的 React 前端项目
 **参考文件**：`references/analysis-template.md`
 
 ### 步骤 2：生成分析文档
-- 输出到 `result/references/analysis.md`
+- 输出到 `skills/img2Code/temp/analysis.md`
 - 包含：布局、模块、样式、间距等所有细节
 - 使用结构化格式（表格、列表）
 
 ### 步骤 3：生成开发提示词
 - 基于 analysis.md 生成
-- 输出到 `result/references/prompt.md`
+- 输出到 `skills/img2Code/temp/prompt.md`
 - 包含：技术栈、组件、样式规范等
 
 **参考文件**：`references/prompt-template.md`
@@ -98,6 +126,10 @@ description: 将设计稿图片转换为完整的 React 前端项目
 1. 运行 `npm install`
 2. 运行 `npm run dev`
 3. 验证项目启动成功
+
+### 步骤 7：清理临时文件
+1. 确认项目生成无误后，删除 `skills/img2Code/temp` 目录。
+2. 保留 `skills/img2Code/assets` 中的原始设计稿。
 
 ## 技术栈选择
 
